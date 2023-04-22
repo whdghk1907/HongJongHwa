@@ -1,7 +1,7 @@
 /* Please ❤ this if you like it! */
 
 
-/* ======================================== * 
+/* ======================================== *
 		        BEST VIEWED FULLSCREEN
    https://codepen.io/ig_design/full/JxbVRq
  * ======================================== */
@@ -44,7 +44,7 @@ a:hover {
 .cursor2,
 .cursor3{
 	position: fixed;
-	border-radius: 50%;	
+	border-radius: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	pointer-events: none;
 	left: -100px;
@@ -280,8 +280,9 @@ body.about-on .about-section {
 	margin: 0 auto;
 	box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
+
 .about-section p span {
-    font-family: 'Dancing Script', cursive;
+	font-family: 'Noto Serif KR', serif;
 	letter-spacing: 1px;
 	color: #866BAF;
 	font-size: 25px;
