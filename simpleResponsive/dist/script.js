@@ -16,6 +16,12 @@ $( document ).ready(function() {
 
   $('#myDeveolperDays').text(diffDays);
 
+  const birthDate = new Date(1996, 10, 15);
+  let age = today.getFullYear() - birthDate.getFullYear() + 1;
+
+  $('#yearAge').text(age);
+
+
   $('.standingHongPhoto').animate({
     'opacity': '1',
   }, {
