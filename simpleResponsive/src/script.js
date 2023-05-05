@@ -20,7 +20,7 @@ $( document ).ready(function() {
     /* ##### ABOUT MYSELF SECTION #### */
     if( bottom_of_window > ($aboutTitle.offset().top + $aboutTitle.outerHeight())){
       $('.about-myself .content h2').addClass('aboutTitleVisible');
-    } 
+    }
   /* ##### EXPERIENCE SECTION #### */
 
       // Check the location of each element hidden */
@@ -40,19 +40,19 @@ $( document ).ready(function() {
 
   /*###### SKILLS SECTION ######*/
 
-    var middle_of_developmentWrapper = $developmentWrapper.offset().top + $developmentWrapper.outerHeight()/2;
+    var middle_of_developmentWrapper = $developmentWrapper.offset().top + $developmentWrapper.outerHeight() / 2;
 
     if((bottom_of_window > middle_of_developmentWrapper)&& (developmentIsVisible == false)){
 
       $('.skills-bar-container li').each( function(){
-
         var $barContainer = $(this).find('.bar-container');
         var dataPercent = parseInt($barContainer.data('percent'));
+
         var elem = $(this).find('.progressbar');
         var percent = $(this).find('.percent');
-        var width = 0;
 
         var id = setInterval(frame, 15);
+        var width = 0;
 
         function frame() {
           if (width >= dataPercent) {

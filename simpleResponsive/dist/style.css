@@ -585,6 +585,10 @@ section {
     animation-fill-mode: forwards;
   }
 
+  div.skills-comment p,ul,li{
+    margin: 10px;
+  }
+
   @keyframes fireworks {
     0% {
       transform: scale(1);
