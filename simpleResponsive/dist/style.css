@@ -16,7 +16,7 @@ body {
 body {
   color: #444;
   background: #f9f9f9;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "PT Sans", sans-serif;
 }
 
@@ -602,5 +602,30 @@ section {
       transform: scale(3);
       opacity: 0;
     }
+  }
+
+  .threeTitle {
+    font-weight:bold;
+    color:#FF7F50;
+    font-size: 1.25em;
+  }
+
+  .text-left {
+    text-align: left;
+  }
+
+  .pt-10 {
+    padding-top: 10px;
+  }
+
+  .mt-10 {
+    margin-top: 10vh;
+  }
+
+  .round-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
   }
 }
