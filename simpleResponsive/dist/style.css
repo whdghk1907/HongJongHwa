@@ -628,4 +628,12 @@ section {
     height: 200px;
     object-fit: cover;
   }
+
+  .contact-icons {
+  }
+
+  .contact-icons > a {
+    padding-top : 10px;
+    display: block;
+  }
 }
