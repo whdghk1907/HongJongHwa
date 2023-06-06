@@ -39,7 +39,7 @@ $( document ).ready(function() {
     duration: 1000,
     queue: false,
     complete: function() {
-      $('.hero .content p').each(function(i) {
+      $('.hero .content').find('p, span, a, ul > li').each(function(i) {
         $(this).delay(100 * i).animate({
           'opacity': '1',
           'top': '0'
@@ -47,7 +47,6 @@ $( document ).ready(function() {
           duration: 500,
           queue: true,
           complete: function() {
-
             // 마우스 오버시 확대 애니메이션 적용
             $(this).mouseenter(function() {
               $('<div class="underline"></div>').appendTo($(this));

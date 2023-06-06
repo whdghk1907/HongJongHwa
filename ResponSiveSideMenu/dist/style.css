@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #444;
+    background: #f9f9f9;
+    font-size: 12px;
+    font-family: "PT Sans", sans-serif;
+    position: relative;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+/* 다른 요소들이 섹션 영역을 침범하지 않도록 설정 */
+.hero .content {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.hero .content .header {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.mt-10 {
+    margin-top: 10vh;
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*.hero .content .header {*/
+/*    top: 12.5%;*/
+/*    width: 100%;*/
+/*    -webkit-transform: translate(0%, -50%);*/
+/*    transform: translate(0%, -50%);*/
+/*    text-align: center;*/
+/*    opacity: 0;*/
+/*}*/
+/*.hero .content .header h1{*/
+/*    color: rgb(37, 37, 65);*/
+/*    font-size: 2.5em;*/
+/*    transform: scale(1);*/
+/*    transition: transform 0.3s ease-in-out;*/
+/*}*/
+
+/*.hero .content .header h1:hover {*/
+/*    transform: scale(1.2);*/
+/*}*/
