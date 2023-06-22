@@ -4,6 +4,9 @@ $( document ).ready(function() {
   const $developmentWrapper = $('.development-wrapper');
   let developmentIsVisible = false;
 
+  window.portFolio = {};
+
+
   /////////////////////////////
   // 개인정보 세팅 함수
   /////////////////////////////
@@ -135,86 +138,6 @@ $( document ).ready(function() {
     });
   }
 
-  const ScrollAnimate = () => {
-    const $aboutTitle = $('.about-myself .content h2');
-    const $developmentWrapper = $('.development-wrapper');
-    let developmentIsVisible = false;
-
-    function handleWindowScroll() {
-      const bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      handleAboutMyselfSection(bottom_of_window);
-      handleExperienceSection(bottom_of_window);
-      handleHeroSection(bottom_of_window);
-      handleSkillsSection(bottom_of_window);
-    }
-
-    function handleAboutMyselfSection(bottom_of_window) {
-      const aboutTitleOffsetTop = $aboutTitle.offset().top + $aboutTitle.outerHeight();
-
-      if (bottom_of_window > aboutTitleOffsetTop) {
-        $('.about-myself .content h2').addClass('aboutTitleVisible');
-      }
-    }
-
-    function handleExperienceSection(bottom_of_window) {
-      $('.experience .content .hidden').each(function(i) {
-        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-
-        if (bottom_of_window > bottom_of_object) {
-          $(this).animate({
-            'opacity': '1',
-            'margin-left': '0'
-          }, 600);
-        }
-      });
-    }
-
-    function handleHeroSection(bottom_of_window) {
-      var $hero = $('.hero');
-      var height_of_hero = $hero.outerHeight();
-      var bottom_of_hero = $hero.offset().top + height_of_hero;
-      var opacity_ratio = (bottom_of_window - bottom_of_hero) / height_of_hero;
-
-      $hero.css({
-        'opacity': 1 - (opacity_ratio * 1.3)
-      });
-    }
-
-    function handleSkillsSection(bottom_of_window) {
-      var middle_of_developmentWrapper = $developmentWrapper.offset().top + $developmentWrapper.outerHeight() / 2;
-
-      if (bottom_of_window > middle_of_developmentWrapper && developmentIsVisible == false) {
-        $('.skills-bar-container li').each(function() {
-          animateProgressBar($(this));
-        });
-        developmentIsVisible = true;
-      }
-    }
-
-    function animateProgressBar(element) {
-      var $barContainer = element.find('.bar-container');
-      var dataPercent = parseInt($barContainer.data('percent'));
-      var elem = element.find('.progressbar');
-      var percent = element.find('.percent');
-      var width = 0;
-
-      var id = setInterval(frame, 15);
-
-      function frame() {
-        if (width >= dataPercent) {
-          clearInterval(id);
-        } else {
-          width++;
-          elem.css("width", width + "%");
-          percent.html(width + " %");
-        }
-      }
-    }
-
-  }
-
-
   // 오늘
   const today = new Date();
 
@@ -224,7 +147,75 @@ $( document ).ready(function() {
   const age = getAge(today);
   $('#yearAge').text(age);
 
-  $(window).scroll(ScrollAnimate);
+
+
+  const handleWindowScroll = () => {
+    $(window).scroll(function() {
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      /* ##### ABOUT MYSELF SECTION #### */
+      if (bottom_of_window > ($aboutTitle.offset().top + $aboutTitle.outerHeight())) {
+        $('.about-myself .content h2').addClass('aboutTitleVisible');
+      }
+
+      /* ##### EXPERIENCE SECTION #### */
+
+      // Check the location of each element hidden */
+      $('.experience .content .hidden').each(function(i) {
+        var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+
+        /* If the object is completely visible in the window, fadeIn it */
+        if (bottom_of_window > bottom_of_object) {
+          $(this).animate({
+            'opacity': '1',
+            'margin-left': '0'
+          }, 600);
+        }
+      });
+
+      /* ##### HERO SECTION #### */
+
+      var $hero = $('.hero');
+      var height_of_hero = $hero.outerHeight();
+      var bottom_of_hero = $hero.offset().top + height_of_hero;
+      var opacity_ratio = (bottom_of_window - bottom_of_hero) / height_of_hero;
+
+      $hero.css({
+        'opacity': 1 - (opacity_ratio * 1.3)
+      });
+
+      /*###### SKILLS SECTION ######*/
+
+      var middle_of_developmentWrapper = $developmentWrapper.offset().top + $developmentWrapper.outerHeight()/2;
+
+      if((bottom_of_window > middle_of_developmentWrapper)&& (developmentIsVisible == false)){
+
+        $('.skills-bar-container li').each( function(){
+
+          var $barContainer = $(this).find('.bar-container');
+          var dataPercent = parseInt($barContainer.data('percent'));
+          var elem = $(this).find('.progressbar');
+          var percent = $(this).find('.percent');
+          var width = 0;
+
+          var id = setInterval(frame, 15);
+
+          function frame() {
+            if (width >= dataPercent) {
+              clearInterval(id);
+            } else {
+              width++;
+              elem.css("width", width+"%");
+              percent.html(width+" %");
+            }
+          }
+        });
+        developmentIsVisible = true;
+      }
+    });
+  }
+
+  $(window).scroll(handleWindowScroll);
 
   showStandingHongPhoto();
   showHeroSection();

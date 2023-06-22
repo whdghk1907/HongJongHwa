@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2023 Maksim Kremlev (https://codepen.io/kremlevmax/pen/EomEyb)
+Copyright (c) 2023 Arlina Code (https://codepen.io/arlinacode/pen/OMXaYb)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
