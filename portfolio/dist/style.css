@@ -1,0 +1,64 @@
+body {
+  background-color: #C0F2FB;
+  font-family: "Tahoma";
+  margin: 0;
+}
+
+.outer {
+  background-color: #E8F8FA;
+  margin: 0 auto;
+}
+
+.inner {
+  background-color: #FFFFFF;
+  width: 94%;
+  padding: 20px 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.portfolio-photo {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.div-photo-text {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.text {
+  font-size: 120%;
+}
+
+.menu-bar {
+  z-index: 1;
+  position: fixed;
+  overflow: hidden;
+  top: 0; 
+  width: 100%; 
+  padding: 10px;
+  background-color: #1A899D;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.menu-button {
+  float: right;
+  background-color: #1A899D;
+  border: 2px solid #1A899D;
+  color: #C0F2FB;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.menu-button:hover {
+  background-color: #C0F2FB;
+  color: #000000;
+}

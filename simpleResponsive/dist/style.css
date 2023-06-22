@@ -13,10 +13,13 @@ body {
   height: 100%;
 }
 
+.container {
+}
+
 body {
   color: #444;
   background: #f9f9f9;
-  font-size: 12px;
+  font-size: 10px;
   font-family: "PT Sans", sans-serif;
 }
 
@@ -31,18 +34,23 @@ section {
 }
 
 /*##### HERO SECTION #####*/
+
 .hero {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+  width: 15vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 .hero div.standingHongPhoto {
   opacity: 0;
-  margin-top: 3vh;
-  height: 90vh;
+  height: 100vh;
   flex-basis: 40%;
   /* Credit image : Unsplash - Luke Chesser */
   background: url("../image/HongInBeach.jpeg");
@@ -51,16 +59,15 @@ section {
 }
 
 .hero .content {
-  flex-basis: 50%;
   margin-top: 7vh;
   padding: 50px;
-  box-sizing: border-box;
+  flex: 1;
+  margin-left: 15vw;
 }
 
 .hero .content p{
   padding:1.5em;
-  font-size: 1.25em;
-  text-align: center;
+  font-size: 1.5em;
   transform: scale(1);
   opacity: 0;
   transition: transform 0.3s ease-in-out;
@@ -72,12 +79,10 @@ section {
 
 
 .hero .content .header {
-  top: 12.5%;
+  padding-top: 5vh;
   width: 100%;
-  -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   text-align: center;
-  opacity: 0;
 }
 .hero .content .header h1{
   color: rgb(37, 37, 65);
