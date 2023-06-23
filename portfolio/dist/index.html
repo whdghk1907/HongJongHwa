@@ -6,53 +6,86 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="../src/css/Slider.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div id="arlina">
-  <div id="header">
-    <h1>Header Wrapper</h1>
-    <p>Cara Membuat Sticky Widget di Sidebar Blog</p>
-  </div>
-  <div id="menuwrap">
-    <div id="menu"><span>Site Navigation</span></div>
-  </div>
-  <div id="content">
-    <div id="main">
-      <div id="box"></div>
-      <div id="box2"></div>
-      <div id="box3"></div>
-      <div id="box"></div>
-      <div id="box2"></div>
-      <div id="box3"></div>
-      <div id="box"></div>
+
+  <!-- 사이드바 구역 -->
+  <div id="side">
+    <div id="sticky-sidebar">
+      <h2> Sticky Sidebar</h2>
+      <div id="sidecontent2" class="cf"><span>Widget</span></div>
     </div>
-    <div id="side">
-      <div id="sticky-sidebar">
-        <h2> Sticky Sidebar</h2>
-        <div id="sidecontent2" class="cf"><span>Widget</span></div>
-        <div id="sidecontent2" class="cf"><span>Widget</span></div>
-        <div id="sidecontent2" class="cf"><span>Widget</span></div>
+  </div>
+  <div id="main-wrapper">
+    <div id="header">
+      <h1>Hong JongHwa</h1>
+      <p>Back-End Developer</p>
+    </div>
+
+    <!-- 상단 메뉴바 -->
+    <div id="menuwrap">
+<!--      <div id="menu"><span>Site Navigation</span></div>-->
+    </div>
+
+
+    <!-- 메인 구역 -->
+    <div id="content">
+
+      <!-- 포토 슬라이더 -->
+      <div id="slider">
+        <a href="#" class="control_next">></a>
+        <a href="#" class="control_prev"><</a>
+        <ul>
+          <li>SLIDE 1</li>
+          <li style="background: #aaa;">SLIDE 2</li>
+          <li>SLIDE 3</li>
+          <li style="background: #aaa;">SLIDE 4</li>
+        </ul>
+      </div>
+
+      <div class="slider_option">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Autoplay Slider</label>
+      </div>
+
+      <!-- D3 라이브러리 활용 그래프 -->
+      <div id="graph"></div>
+
+      <div id="main">
+        <div id="box"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
       </div>
     </div>
+
+    <!-- Footer -->
+    <div id="footer-wrapper" class="cf">
+      <h2> Footer Wrapper</h2>
+      <div class="boxi"></div>
+      <div class="boxi"></div>
+      <div class="boxi"></div>
+      <div class="boxi"></div>
+      <div class="boxi"></div>
+      <div class="boxi"></div>
+    </div>
+
+
+    <!-- 크레딧 카드 -->
+    <div id="credit"><span>Layout by. Arlina Design Powered by. Codepen</span></div>
+
   </div>
-  <div id="footer-wrapper" class="cf">
-    <h2> Footer Wrapper</h2>
-    <div class="boxi"></div>
-    <div class="boxi"></div>
-    <div class="boxi"></div>
-    <div class="boxi"></div>
-    <div class="boxi"></div>
-    <div class="boxi"></div>
-  </div>
-  <div id="credit"><span>Layout by. Arlina Design Powered by. Codepen</span></div>
 </div>
 </div>
 <div class='back-to-top' id='back-to-top' title='Back to top'><i class='fa fa-chevron-up'></i></div>
 <!-- partial -->
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script  src="./script.js"></script>
+<script  src="../src/js/Graph.js"></script>
+<script  src="../src/js/Slider.js"></script>
 
 </body>
 </html>

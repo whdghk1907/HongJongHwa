@@ -2,24 +2,25 @@ $(function() {
   if ($('#sticky-sidebar').length) {
     var el = $('#sticky-sidebar');
     var stickyTop = $('#sticky-sidebar').offset().top;
-    var stickyHeight = $('#sticky-sidebar').height();
+    // var stickyHeight = $('#sticky-sidebar').height();
+
     $(window).scroll(function() {
-      var limit = $('#footer-wrapper').offset().top - stickyHeight - 20;
+      // var limit = $('#footer-wrapper').offset().top - stickyHeight - 20;
       var windowTop = $(window).scrollTop();
       if (stickyTop < windowTop) {
         el.css({
           position: 'fixed',
-          top: 20
+          // top: 20
         });
       } else {
-        el.css('position', 'static');
+        // el.css('position', 'static');
       }
-      if (limit < windowTop) {
-        var diff = limit - windowTop;
-        el.css({
-          top: diff
-        });
-      }
+      // if (limit < windowTop) {
+      //   var diff = limit - windowTop;
+      //   el.css({
+      //     top: diff
+      //   });
+      // }
     });
   }
 });
