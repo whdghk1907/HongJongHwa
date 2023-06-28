@@ -1,6 +1,6 @@
 $(function () {
     var   w = 1000,
-        h =  800,
+        h =  1500,
         circleWidth = 5;
 
 
@@ -17,24 +17,16 @@ $(function () {
         { name: "Web" },
         { name: "Front End", target: [0], value: 80 },
         { name: "Back End", target: [0], value: 80 },
-        // { name: "HTML5", target: [0], value: 58 },
-        // { name: "CSS3", target: [0, 1], value: 65 },
-        // { name: "Scss", target: [0, 1, 2], value: 52 },
-        // { name: "Compass", target: [0, 3], value: 48 },
-        // { name: "Susy", target: [0,3,4], value: 40 },
-        // { name: "Breakpoints", target: [0,3,4,5], value: 36 },
-        // { name: "jQuery", target: [0, 1, 2], value: 52 },
-        // { name: "Javascript", target: [0, 1, 2, 8], value: 42 },
-        // { name: "PHP", target: [0,1,2], value: 35 },
-        // { name: "Wordpress", target: [0,1,2,3,9], value: 67 },
+        { name: "DevOps", target: [0], value: 80 },
+        { name: "GIS", target: [0], value: 80 },
+        // { name: "HTML5", target: [1], value: 58 },
+        // { name: "CSS3", target: [1], value: 65 },
+        // { name: "Javascript", target: [1], value: 42 },
+        // { name: "Java", target: [2], value: 35 },
+        // { name: "Spring", target: [2], value: 35 },
+        // { name: "SpringBoot", target: [2], value: 35 },
+        // { name: "GeoTools", target: [2], value: 35 },
         // { name: "Git", target: [0,1,2,3,4,5,6,7,8,10], value: 68 },
-        // { name: "Snap.svg", target: [0,1,2,7,8 ], value: 16 },
-        // { name: "d3", target: [0,1,2,7,8], value: 25 },
-        // { name: "Gulp", target: [0,1,2,3,4,5,6,7,8,9,10,11,12], value: 45 },
-        // { name: "AngularJS", target: [0,1,2,7,8], value: 27 },
-        // { name: "Adobe CS", target: [0,1,2,12], value: 57 },
-        // { name: "mySql", target: [0,9,10], value: 20 },
-        // { name: "Grunt", target: [0,9,10], value: 37 },
     ];
 
     var links = [];
@@ -56,7 +48,7 @@ $(function () {
 
         .append('svg')
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 1000 800")
+        .attr("viewBox", "0 0 1000 1500")
         .classed("svg-content-responsive", true)
 
 
@@ -143,9 +135,9 @@ $(function () {
         })
         .attr('font-size', function(d, i){
             if (i > 0) {
-                return '.8em';
+                return '1.25em';
             } else {
-                return '.9em';
+                return '1.5em';
             }
         })
 

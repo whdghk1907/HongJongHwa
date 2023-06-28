@@ -15,41 +15,47 @@
   <!-- 사이드바 구역 -->
   <div id="side">
     <div id="sticky-sidebar">
-      <h2> Sticky Sidebar</h2>
-      <div id="sidecontent2" class="cf"><span>Widget</span></div>
+      <div id="header">
+        <h3>Hong JongHwa</h3>
+        <p>Back-End Developer</p>
+      </div>
     </div>
   </div>
+
   <div id="main-wrapper">
-    <div id="header">
-      <h1>Hong JongHwa</h1>
-      <p>Back-End Developer</p>
-    </div>
 
     <!-- 상단 메뉴바 -->
-    <div id="menuwrap">
+<!--    <div id="menuwrap">-->
 <!--      <div id="menu"><span>Site Navigation</span></div>-->
-    </div>
+<!--    </div>-->
 
 
     <!-- 메인 구역 -->
     <div id="content">
-
       <!-- 포토 슬라이더 -->
       <div id="slider">
-        <a href="#" class="control_next">></a>
-        <a href="#" class="control_prev"><</a>
+        <a href="#" class="control_next"></a>
+        <a href="#" class="control_prev"></a>
         <ul>
-          <li>SLIDE 1</li>
-          <li style="background: #aaa;">SLIDE 2</li>
-          <li>SLIDE 3</li>
-          <li style="background: #aaa;">SLIDE 4</li>
+          <li>
+            <img src="../image/HongInBeach.jpeg" alt="HongInBeach">
+          </li>
+          <li>
+            <img src="../image/HongInCafe.jpeg" alt="HongInCafe">
+          </li>
+          <li>
+            <img src="../image/HongInBeach.jpeg" alt="HongInBeach">
+          </li>
+          <li>
+            <img src="../image/HongInCafe.jpeg" alt="HongInCafe">
+          </li>
         </ul>
       </div>
 
-      <div class="slider_option">
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox">Autoplay Slider</label>
-      </div>
+<!--      <div class="slider_option">-->
+<!--        <input type="checkbox" id="checkbox">-->
+<!--        <label for="checkbox">Autoplay Slider</label>-->
+<!--      </div>-->
 
       <!-- D3 라이브러리 활용 그래프 -->
       <div id="graph"></div>
@@ -84,6 +90,7 @@
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script  src="./script.js"></script>
+<script src="../src/js/Scroll.js"></script>
 <script  src="../src/js/Graph.js"></script>
 <script  src="../src/js/Slider.js"></script>
 

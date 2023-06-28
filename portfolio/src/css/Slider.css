@@ -2,8 +2,9 @@
     position: relative;
     margin: 0;
     padding: 0;
-    height: 200px;
+    height: 100vh;
     list-style: none;
+    text-align: center;
 }
 
 #slider ul li {
@@ -12,23 +13,38 @@
     float: left;
     margin: 0;
     padding: 0;
-    width: 500px;
-    height: 300px;
-    background: #ccc;
+    width: 48vw;
+    height: 100vh;
     text-align: center;
     line-height: 300px;
 }
 
+#slider ul li img {
+    max-width: 90%;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.beachImage {
+    margin: 0 auto 0 0;
+}
+
+.cafeImage {
+    margin: 0 0 0 auto;
+}
+
 a.control_prev, a.control_next {
-    background-color: transparent;
     color: black;
     font-weight: bold;
     position: absolute;
     z-index: 999;
     padding: 10px;
-    top: 10%;
+    left: 93%;
     transform: translateY(-50%);
 }
+
 
 a.control_prev:hover, a.control_next:hover {
     opacity: 1;
@@ -36,13 +52,15 @@ a.control_prev:hover, a.control_next:hover {
 }
 
 a.control_prev {
+    background-color: rgba(225, 93, 93, 0.5);
     border-radius: 0 2px 2px 0;
-    left: 0;
+    top: 30%;
 }
 
 a.control_next {
-    right: 0;
+    background-color: rgba(74, 145, 220, 0.5);
     border-radius: 2px 0 0 2px;
+    top: 31.5%;
 }
 
 .slider_option {
