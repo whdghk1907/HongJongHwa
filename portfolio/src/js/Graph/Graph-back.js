@@ -1,7 +1,7 @@
 $(function () {
     var   w = 1000,
-        h =  1500,
-        circleWidth = 5;
+        h =  800,
+        circleWidth = 20;
 
 
     var palette = {
@@ -14,18 +14,13 @@ $(function () {
     var colors = d3.scale.category20();
 
     var nodes = [
-        { name: "Web" },
-        { name: "Front End", target: [0], value: 80 },
-        { name: "Back End", target: [0], value: 80 },
-        { name: "DevOps", target: [0], value: 80 },
-        { name: "GIS", target: [0], value: 80 },
-        // { name: "HTML5", target: [1], value: 58 },
-        // { name: "CSS3", target: [1], value: 65 },
-        // { name: "Javascript", target: [1], value: 42 },
-        // { name: "Java", target: [2], value: 35 },
-        // { name: "Spring", target: [2], value: 35 },
-        // { name: "SpringBoot", target: [2], value: 35 },
-        // { name: "GeoTools", target: [2], value: 35 },
+        { name: "Backend" },
+        { name: "Java", target: [0], value: 80 },
+        { name: "SpringBoot", target: [0], value: 80 },
+        { name: "Restful", target: [0], value: 80 },
+        { name: "JUnit", target: [0], value: 80 },
+        { name: "Google Style Guide", target: [0], value: 80 },
+        { name: "GeoTools", target: [0], value: 80 },
         // { name: "Git", target: [0,1,2,3,4,5,6,7,8,10], value: 68 },
     ];
 
@@ -42,13 +37,13 @@ $(function () {
     };
 
 
-    var myChart = d3.select('#graph')
+    var myChart = d3.select('#graph-back')
         .append("div")
         .classed("svg-container", true)
 
         .append('svg')
         .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 1000 1500")
+        .attr("viewBox", "0 0 1000 800")
         .classed("svg-content-responsive", true)
 
 
@@ -142,5 +137,4 @@ $(function () {
         })
 
     force.start();
-
 })

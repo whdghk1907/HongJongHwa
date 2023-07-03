@@ -1,39 +1,132 @@
-#slider ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
+/*#slider ul {*/
+/*    position: relative;*/
+/*    margin: 0;*/
+/*    padding: 10px 0 0 0;*/
+/*    height:75vh;*/
+/*    list-style: none;*/
+/*    text-align: start;*/
+/*}*/
+
+/*#slider ul li {*/
+/*    position: relative;*/
+/*    display: block;*/
+/*    float: left;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    width: 50%;*/
+/*    height: 75vh;*/
+/*    text-align: start;*/
+/*    line-height: 75vh; !* 이미지의 세로 중앙 정렬을 위해 line-height 값 조정 *!*/
+/*}*/
+
+/*#slider */
+/*ul */
+/*li */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
+#slider {
     height: 100vh;
-    list-style: none;
-    text-align: center;
+    position: relative;
 }
 
-#slider ul li {
-    position: relative;
-    display: block;
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 48vw;
-    height: 100vh;
-    text-align: center;
-    line-height: 300px;
+.cafeImageText {
+    position: absolute;
+    top: 10%;
+    right: 5%;
 }
 
-#slider ul li img {
-    max-width: 90%;
-    height: 100vh;
-    max-height: 100vh;
+.beachImageText {
+    position: absolute;
+    bottom: 45%;
+    left: 10px;
+}
+
+img.cafeImage, img.beachImage {
+    height: auto;
+    max-height: 75vh;
     overflow: hidden;
     object-fit: contain;
+    border-radius: 5px; /* 이미지의 모서리를 부드럽게 만들기 위해 border-radius 값 추가 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 그림자 추가 */
 }
 
-.beachImage {
-    margin: 0 auto 0 0;
+img.cafeImage {
+    max-width: 62%;
+    margin: 10px 0px 0px 0px;
+    z-index: 999;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: fadeInLeft 1s ease-in-out forwards;
 }
 
-.cafeImage {
-    margin: 0 0 0 auto;
+img.beachImage {
+    max-width: 50%;
+    float: right;
+    margin: 10px;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInBottom 1s ease-in-out forwards;
 }
+
+span.cafeImageText {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: fadeInRight 1s ease-in-out forwards;
+}
+
+span.beachImageText {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: fadeInTop 1s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
 
 a.control_prev, a.control_next {
     color: black;
@@ -45,27 +138,39 @@ a.control_prev, a.control_next {
     transform: translateY(-50%);
 }
 
-
-a.control_prev:hover, a.control_next:hover {
-    opacity: 1;
-    -webkit-transition: all 0.2s ease;
-}
-
 a.control_prev {
     background-color: rgba(225, 93, 93, 0.5);
     border-radius: 0 2px 2px 0;
-    top: 30%;
+    top: 12%;
 }
 
 a.control_next {
     background-color: rgba(74, 145, 220, 0.5);
     border-radius: 2px 0 0 2px;
-    top: 31.5%;
+    top: 13.5%;
 }
 
-.slider_option {
-    position: relative;
-    margin: 10px auto;
-    width: 160px;
-    font-size: 18px;
+.timeToDeveloper {
+    font-size: 1.25em;
+    color: #0095ff;
+    line-height: 2.5;
+}
+
+.tagForTime {
+    font-size: 0.875em;
+    color: #919191;
+}
+
+.tagForIntroduce {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: #000000;
+    line-height: 1.25;
+}
+
+.introduceMySelf {
+    margin-top: 30px;
+    color: #919191;
+    line-height: 1.5;
 }

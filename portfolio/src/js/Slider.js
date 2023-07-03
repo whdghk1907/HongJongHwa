@@ -33,6 +33,11 @@ jQuery(document).ready(function ($) {
         });
     };
 
+    function updateSliderText() {
+        $('#slider ul li').removeClass('slide-active');
+        $('#slider ul li:first-child').addClass('slide-active');
+    }
+
     $('a.control_prev').click(function () {
         moveLeft();
     });

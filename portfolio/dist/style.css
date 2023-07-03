@@ -9,8 +9,6 @@ body {
   padding: 0;
   background: transparent;
   font-family: 'Nanum Square', sans-serif;
-  /*font-family: 'Oswald', sans-serif;*/
-  text-transform: uppercase;
 }
 
 a,
@@ -337,11 +335,92 @@ a:visited:hover {
   opacity: 1;
 }
 
-#graph {
+#graph-back, #graph-devops, #graph-front {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
 
-.svg-container {
-  height: 100vh;
+.portFolioHeader {
+  margin: 30px 45px 30px 0;
+  font-size: 2em;
+  color: #919191;
+  border-bottom: #eeeeee solid 1px;
 }
+
+.techSkillsTitle {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+p.techSkillsText {
+  font-size: 0.85em;
+  color: #919191;
+  line-height: 2;
+  margin-bottom: 100px;
+}
+
+p.aboutMeText {
+  font-size: 0.85em;
+  color: #919191;
+  line-height: 2;
+}
+
+div.myGoal {
+  border: #eeeeee solid 1px;
+  padding: 30px;
+  text-align: center;
+  margin: 20px 10px 0 0;
+  margin-bottom: 100px;
+}
+
+div.aboutMyTools {
+  width: 5vw;
+  height: 8.5vh;
+  margin: 20px 0 20px 0;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p.aboutTech {
+    font-size: 0.75em;
+    color: #919191;
+    line-height: 2;
+    border: #eeeeee solid 1px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.d-flex{
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0 60px 0;
+}
+
+.justify-content-center{
+  justify-content: center;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.contact-icons > a{
+  padding: 0 20px 0 20px;
+  font-size: 0.75em;
+  line-height: 2.5;
+  display: block;
+}
+
+.menu {
+  border-top: #eeeeee solid 1px;
+  margin-top: 20px;
+  padding: 0 20px 0 20px;
+  line-height: 4;
+  font-size: 1.15em;
+}
+
+#sticky-sidebar {
+  border-right: #eeeeee solid 1px;
+  position: fixed;
+}
+
