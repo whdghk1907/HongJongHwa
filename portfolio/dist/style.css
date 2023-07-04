@@ -158,12 +158,12 @@ a:visited:hover {
   height: 170px;
   width: 250px;
   margin: 0;
-  background: #fff url('https://4.bp.blogspot.com/-85zQwMdLm24/VmGwA9aFRgI/AAAAAAAAAVM/AHpkZL9MdTQ/s1600/Nubie%2BBanget%2BBlogger%2BTemplate.jpg') center;
+  background: #fff url('../image/O2QA.png') center;
   background-size: cover
 }
 
 #box2:before {
-  background: #fff url('https://2.bp.blogspot.com/-V5Pi6tg3kk4/VmFRvAbi6rI/AAAAAAAAATc/9gm3XBewj0k/s1600/Sweet%2BYummy%2BChocolate%2BCake.jpg') center;
+  background: #fff url('../image/O2Platform.png') center;
   background-size: cover
 }
 
@@ -361,8 +361,14 @@ p.techSkillsText {
 
 p.aboutMeText {
   font-size: 0.85em;
-  color: #919191;
-  line-height: 2;
+  line-height: 2.25;
+  word-break: break-all;
+  padding: 10px 40px 10px 10px;
+}
+
+p.aboutMeText > a {
+  font-weight: bold;
+  color: #000000;
 }
 
 div.myGoal {
@@ -373,12 +379,19 @@ div.myGoal {
   margin-bottom: 100px;
 }
 
+div.oneLineIntroduce {
+  font-size: 1.25em;
+  padding: 30px;
+  margin: 20px 10px 0 0;
+}
+
 div.aboutMyTools {
-  width: 5vw;
-  height: 8.5vh;
+  width: 150px;
+  height: 150px;
   margin: 20px 0 20px 0;
   border: 1px solid #eeeeee;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 10px 8px 6px 4px rgba(0, 0, 0, 0.18);
 }
 
 p.aboutTech {
@@ -424,3 +437,18 @@ p.aboutTech {
   position: fixed;
 }
 
+.aboutMyTools:nth-child(1) {
+  border-bottom: 2px solid rgba(255, 38, 0, 0.5);
+}
+
+.aboutMyTools:nth-child(2) {
+  border-bottom: 2px solid rgba(0, 81, 255, 0.5);
+}
+
+.aboutMyTools:nth-child(3) {
+  border-bottom: 2px solid rgba(0, 128, 6, 0.5);
+}
+
+.aboutMyTools:nth-child(4) {
+  border-bottom: 2px solid rgba(247, 255, 0, 0.49);
+}
