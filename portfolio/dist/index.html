@@ -1,74 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Cara Membuat Sticky Widget di Sidebar Blog</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="../src/css/Slider.css">
+    <meta charset="UTF-8">
+    <title>CodePen - Cara Membuat Sticky Widget di Sidebar Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../src/css/Slider.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div id="arlina">
 
-  <!-- 사이드바 구역 -->
-  <div id="side">
-    <div id="sticky-sidebar">
-      <div id="header">
-        <h3>Hong JongHwa</h3>
-        <p>Back-End Developer</p>
-      </div>
-      <div class="contact-icons">
-        <a href="mailto:whdghk1907@naver.com" class="contact-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
-            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
-          </svg>
-          whdghk1907@naver.com
-        </a>
-        <a href="https://github.com/whdghk1907" class="contact-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
-            <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-          </svg>
-          https://github.com/whdghk1907
-        </a>
-      </div>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Tech Skills</a></li>
-        <li><a href="#">Project</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Career</a></li>
-        <li><a href="#">education</a></li>
-        <li><a href="#">about</a></li>
-      </ul>
+    <!-- 사이드바 구역 -->
+    <div id="side">
+        <div id="sticky-sidebar">
+            <div id="header">
+                <h3>Hong JongHwa</h3>
+                <p>Back-End Developer</p>
+            </div>
+            <div class="contact-icons">
+                <a href="mailto:whdghk1907@naver.com" class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+                    </svg>
+                    whdghk1907@naver.com
+                </a>
+                <a href="https://github.com/whdghk1907" class="contact-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 496 512">
+                        <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                    </svg>
+                    https://github.com/whdghk1907
+                </a>
+                <a href="https://velog.io/@whdghk1908" class="contact-icon">
+                  <i class="fas fa-home"></i>
+                  https://velog.io/@whdghk1908
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Tech Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">My Works</a></li>
+                <li><a href="#">Education</a></li>
+            </ul>
+        </div>
     </div>
-  </div>
 
-  <div id="main-wrapper">
+    <div id="main-wrapper">
 
-    <!-- 상단 메뉴바 -->
-<!--    <div id="menuwrap">-->
-<!--      <div id="menu"><span>Site Navigation</span></div>-->
-<!--    </div>-->
+        <!-- 상단 메뉴바 -->
+        <!--    <div id="menuwrap">-->
+        <!--      <div id="menu"><span>Site Navigation</span></div>-->
+        <!--    </div>-->
 
 
-    <!-- 메인 구역 -->
-    <div id="content">
-      <div id="slider">
-            <img class="cafeImage" src="../image/HongInCafe.jpeg" alt="HongInCafe">
-            <img class="beachImage" src="../image/HongInBeach.jpeg" alt="HongInBeach">
-            <span class="cafeImageText">
+        <!-- 메인 구역 -->
+        <div id="content">
+            <div id="slider">
+                <img class="cafeImage" src="../image/HongInCafe.jpeg" alt="HongInCafe">
+                <img class="beachImage" src="../image/HongInBeach.jpeg" alt="HongInBeach">
+                <span class="cafeImageText">
               <p class="tagForTime">
                 개발자로 일한 시간 :
               </p>
                <p class="timeToDeveloper">
                </p>
             </span>
-            <span class="beachImageText">
+                <span class="beachImageText">
               <p class="tagForIntroduce">
                 BackEnd <br>
                 Developer
@@ -79,128 +81,295 @@
                 그만큼 더 성실하게 달리고 있습니다.
               </p>
             </span>
+            </div>
+
+            <p class="portFolioHeader about">About</p>
+
+            <div class="oneLineIntroduce">"안녕하세요. 서버 개발자 홍종화 입니다."</div>
+            <p class="aboutMeText">
+                저는 개발자 이전에도 안경사,
+                사진작가 등 다양한 업종을 경험해 보았습니다.
+                제가 제공하는 서비스로 인해서, 사람들이 기쁨과 편리함을 느낄때,
+                큰 보람을 느꼈습니다. 시간이 지나고 경력이 쌓여갈수록,
+                제공할 수 있는 서비스에 한계가 있음을 느꼈습니다.
+                <a> 저는 제 자신의 성장을 위해서도, 사람들에게 더 많은 기쁨과 편리함을 제공하고 싶었습니다.</a>
+                그러던 도중 프로그래밍이라는 것을 접하게 되었습니다.
+                프로그래밍을 통해 사람들에게 이로운 서비스를 개발하고 우리의 인생이라는
+                한정된 시간 안에서 사람들이 시간을 좀 더 가치 있게 쓸 수 있도록 해주고 싶었습니다.
+                많은 고민 끝에 기존의 직장을 그만두고 개발 공부를 시작하여 GIS로 웹개발을 시작했습니다.
+                남들보다 한발 늦게 시작한 만큼, 더 꾸준하고 성실한 노력을 통하여 성장하는 개발자가 돼기 위하여 노력하고 있습니다.
+
+            </p>
+            <div style="display: flex; justify-content: space-around">
+                <div class="aboutMyTools">
+                    <i class="fas fa-server"></i>
+                    <p>Server</p>
+                </div>
+                <div class="aboutMyTools">
+                    <i class="fas fa-network-wired"></i>
+                    <p>Spring</p>
+                </div>
+                <div class="aboutMyTools">
+                    <i class="fas fa-terminal"></i>
+                    <p>Java</p>
+                </div>
+                <div class="aboutMyTools">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Web</p>
+                </div>
+            </div>
+            <div class="myGoal">
+                저는 뛰어난 서버 개발자가 되어 세상에 이로운 서비스를 제공하고 싶습니다!
+            </div>
+
+            <!--      <div class="slider_option">-->
+            <!--        <input type="checkbox" id="checkbox">-->
+            <!--        <label for="checkbox">Autoplay Slider</label>-->
+            <!--      </div>-->
+
+            <!-- D3 라이브러리 활용 그래프 -->
+
+            <p class="portFolioHeader techskills">Tech Skills</p>
+            <p class="techSkillsText">
+                GIS 사업을 수행하는 회사에서 근무하며, Back 과 Front 를 가리지 않고 유지보수 및 개발을 진행하였습니다. <br>
+                회사에서는 어느 한곳에 치우치지 않고, 공간정보를 능숙하게 다루는 개발자를 지향하여 다양한 업무를 주었습니다.<br>
+                분명 많은 성장을 할 수 있었지만, 서버 개발자로써 더 전문적이고 다양한 기술과 다양한 코드를 경험해 보고 싶어, 이직을 결심했습니다.
+            </p>
+
+            <p class="techSkillsTitle">BackEnd</p>
+            <div id="graph-back"></div>
+            <p class="aboutTech">
+                백엔드 개발자로써, 저는 TDD와 클린코드의 철학에 깊이 빠져있습니다. 디버그 비용의 절감뿐 아니라, <br>
+                주니어 개발자로써의 성장과 협업능력 증진에 아주 중요한 요소라고 생각합니다. 업무에도 적용시키기 위해 노력하고 있으며, <br>
+                Google에서 제시한 Style Guide를 실천하려고 노력하고 있습니다. <br>
+                또한 RESTful API 같이 다른 개발자와 협업을 위한 규약을 지키는 것이 중요하다고 생각합니다. <br>
+            </p>
+            <div class="d-flex">
+                <ul>
+                </ul>
+                <ul>
+                </ul>
+            </div>
+
+
+            <p class="techSkillsTitle">FrontEnd</p>
+            <div id="graph-front"></div>
+            <p class="aboutTech">
+                회사에서 GIS 개발업무를 수행하면서 JS 환경에서 작업하는 경험이 많았습니다. 사내 SDK 서버를 운영하거나, <br>
+                OpenLayers 라이브러리를 활용하여 지도를 구현하는 등 다양한 경험을 통해, JS에 대한 이해도가 높아졌습니다. <br>
+                GIS 외의 프로젝트에서는 React 와 TypeScript 를 활용하여 개발을 진행하였습니다. <br>
+                회사에서 강조한 메인 업무는 JS 모듈의 동적인 호출이었습니다. 7mb 가 넘는 SDK파일을 동적으로 호출하며, 기존에 <br>
+                작동하던 프로그램에서 오류가 발생하지 않도록 하는 작업이 가장 중요한 업무였습니다. <br>
+                또한, React 와 TypeScript 개발환경에서 지도모듈을 구현하는 방법을 탐색하거나, 새로운 GIS 라이브러리를 탐색하였습니다.
+            </p>
+            <div class="d-flex">
+                <ul>
+                </ul>
+                <ul>
+                </ul>
+            </div>
+
+            <p class="techSkillsTitle">DevOps</p>
+            <div id="graph-devops"></div>
+            <p class="aboutTech">
+                회사에서는 개발환경을 on-premise 환경으로 구성하여 아쉬움이 많았습니다. 직접 Docker와 Jenkins를 활용하여 배포전략을 구성해보는 경험을 해보았지만,<br>
+                아직은 부족한 부분이 많습니다. AWS를 활용하여 서버를 구성해보거나, Kubernetes와 Nginx를 활용한 로드밸런싱, Redis 등의 NoSQL 을 이용한 트래픽 분산, <br>
+                Kafka등 다양한 DevOps를 활용하여 MSA 아키텍처를 구성해보는 것이 앞으로의 목표입니다.
+            </p>
+            <div class="d-flex">
+                <ul>
+                </ul>
+                <ul>
+                </ul>
+            </div>
+
+            <p class="portFolioHeader projects">Projects</p>
+
+            <div id="main">
+                <div id="box"></div>
+                <div id="box2"></div>
+            </div>
+
+        </div>
+
+      <p class="portFolioHeader myworks">Works</p>
+
+      <div class="companyInfo">
+        <p class="companyInfoHeader">(주)지오투 정보기술</p>
+        <span>2022.06 ~ 현재</span>
+        <p class="companyInfoDesc">
+          GIS 기술을 취급하며, 다양한 특허기술과 소프트웨어 솔루션을 가지고 다양한 기관들과 사업을 진행하는 기업입니다.
+          <br>
+          <br>
+          기본적으로 <strong>Spring 기반의 풀 스택 웹 개발을 담당</strong> 하고 있으며,
+          생산성 및 코드 품질 향상을 위한 <strong>신규 기술 스택(Docker, TypeScript) 등</strong>의 도입과
+          개발 및 교육을 담당하고 있습니다. 또한, <strong>사내 개발 서버에 대한 상태관리</strong>와
+          <strong>레거시 프로젝트 들의 코드 리팩토링 및</strong> 신입 개발자들에 대한 코드 리뷰와 멘토역할 같은 기타 업무까지
+          함께 담당하고 있습니다.
       </div>
-      <p class="portFolioHeader">About Me</p>
-      <div class="oneLineIntroduce">"안녕하세요. 서버 개발자 홍종화 입니다."</div>
-      <p class="aboutMeText">
-        저는 개발자 이전에도 안경사,
-        사진작가 등 다양한 업종을 경험해 보았습니다.
-        제가 제공하는 서비스로 인해서, 사람들이 기쁨과 편리함을 느낄때,
-        큰 보람을 느꼈습니다. 시간이 지나고 경력이 쌓여갈수록,
-        제공할 수 있는 서비스에 한계가 있음을 느꼈습니다.
-        <a> 저는 제 자신의 성장을 위해서도, 사람들에게 더 많은 기쁨과 편리함을 제공하고 싶었습니다.</a>
-        그러던 도중 프로그래밍이라는 것을 접하게 되었습니다.
-        프로그래밍을 통해 사람들에게 이로운 서비스를 개발하고 우리의 인생이라는
-        한정된 시간 안에서 사람들이 시간을 좀 더 가치 있게 쓸 수 있도록 해주고 싶었습니다.
-        많은 고민 끝에 기존의 직장을 그만두고 개발 공부를 시작하여 GIS로 웹개발을 시작했습니다.
-        남들보다 한발 늦게 시작한 만큼, 더 꾸준하고 성실한 노력을 통하여 성장하는 개발자가 돼기 위하여 노력하고 있습니다.
 
-      </p>
-      <div style="display: flex; justify-content: space-around">
-        <div class="aboutMyTools"></div>
-        <div class="aboutMyTools"></div>
-        <div class="aboutMyTools"></div>
-        <div class="aboutMyTools"></div>
-      </div>
-      <div class="myGoal">
-        저는 뛰어난 서버 개발자가 되어 세상에 이로운 서비스를 제공하고 싶습니다!
-      </div>
-
-<!--      <div class="slider_option">-->
-<!--        <input type="checkbox" id="checkbox">-->
-<!--        <label for="checkbox">Autoplay Slider</label>-->
-<!--      </div>-->
-
-      <!-- D3 라이브러리 활용 그래프 -->
-
-      <p class="portFolioHeader">Tech Skills</p>
-      <p class="techSkillsText">
-        GIS 사업을 수행하는 회사에서 근무하며, Back 과 Front 를 가리지 않고 유지보수 및 개발을 진행하였습니다. <br>
-        회사에서는 어느 한곳에 치우치지 않고, 공간정보를 능숙하게 다루는 개발자를 지향하여 다양한 업무를 주었습니다.<br>
-        분명 많은 성장을 할 수 있었지만, 서버 개발자로써 더 전문적이고 다양한 기술과 다양한 코드를 경험해 보고 싶어, 이직을 결심했습니다.
-      </p>
-
-      <p class="techSkillsTitle">BackEnd</p>
-      <div id="graph-back"></div>
-      <p class="aboutTech">
-        백엔드 개발자로써, 저는 TDD와 클린코드의 철학에 깊이 빠져있습니다. 디버그 비용의 절감뿐 아니라, <br>
-        주니어 개발자로써의 성장과 협업능력 증진에 아주 중요한 요소라고 생각합니다. 업무에도 적용시키기 위해 노력하고 있으며, <br>
-        Google에서 제시한 Style Guide를 실천하려고 노력하고 있습니다. <br>
-        또한 RESTful API 같이 다른 개발자와 협업을 위한 규약을 지키는 것이 중요하다고 생각합니다. <br>
-      </p>
-      <div class="d-flex">
-        <ul>
-        </ul>
-        <ul>
-        </ul>
-      </div>
+      <hr>
 
 
-      <p class="techSkillsTitle">FrontEnd</p>
-      <div id="graph-front"></div>
-      <p class="aboutTech">
-        회사에서 GIS 개발업무를 수행하면서 JS 환경에서 작업하는 경험이 많았습니다. 사내 SDK 서버를 운영하거나, <br>
-        OpenLayers 라이브러리를 활용하여 지도를 구현하는 등 다양한 경험을 통해, JS에 대한 이해도가 높아졌습니다. <br>
-        GIS 외의 프로젝트에서는 React 와 TypeScript 를 활용하여 개발을 진행하였습니다. <br>
-        회사에서 강조한 메인 업무는 JS 모듈의 동적인 호출이었습니다. 7mb 가 넘는 SDK파일을 동적으로 호출하며, 기존에 <br>
-        작동하던 프로그램에서 오류가 발생하지 않도록 하는 작업이 가장 중요한 업무였습니다. <br>
-        또한, React 와 TypeScript 개발환경에서 지도모듈을 구현하는 방법을 탐색하거나, 새로운 GIS 라이브러리를 탐색하였습니다.
-      </p>
-      <div class="d-flex">
-        <ul>
-        </ul>
-        <ul>
-        </ul>
-      </div>
 
-      <p class="techSkillsTitle">DevOps</p>
-      <div id="graph-devops"></div>
-      <p class="aboutTech">
-        회사에서는 개발환경을 on-premise 환경으로 구성하여 아쉬움이 많았습니다. 직접 Docker와 Jenkins를 활용하여 배포전략을 구성해보는 경험을 해보았지만,<br>
-        아직은 부족한 부분이 많습니다. AWS를 활용하여 서버를 구성해보거나, Kubernetes와 Nginx를 활용한 로드밸런싱, Redis 등의 NoSQL 을 이용한 트래픽 분산, <br>
-        Kafka등 다양한 DevOps를 활용하여 MSA 아키텍처를 구성해보는 것이 앞으로의 목표입니다.
-      </p>
-      <div class="d-flex">
-        <ul>
-        </ul>
-        <ul>
-        </ul>
-      </div>
+        <div id="works">
+            <p>▎GIS 교육 및 실습 멘토링</p>
+            <ul>
+                <li>OpenLayers, Geotools, Geoserver의 구조와 사용법에 대한 사내 교육시스템 진행</li>
+                <li>OpenLayers, Geotools, Geoserver를 활용하여 공간분석, 기능구현 등 과제를 수행하며 개인 프로젝트 수행</li>
+                <li>PostGIS 공간 DB에 대한 교육과 실습 진행</li>
+                <li>WMS, WFS, WCS, WPS 등 GIS 표준 통신방식 및 WKT 데이터 타입에 대한 실습 진행</li>
+                <li>공간분석 WebProject에 투입되어, PostGIS 공간분석 쿼리 작성</li>
+            </ul>
 
-      <div id="main">
-        <div id="box"></div>
-        <div id="box2"></div>
-<!--        <div id="box3"></div>-->
-      </div>
+            <br>
+
+            <p>▎개발업무</p>
+            <ul>
+                <li>
+                    GIS 공간분석에 사용되는 OpenLayers, Geotools 기반의 SDK 서버의 관리 및 예제 / 테스트 페이지 개발
+                    <ul>
+                        <li>SDK 서버의 코드 분석하여 Docs 페이지 작성</li>
+                        <li>parameter를 작성하고 요청을 보낸후 결과값을 확인할 수 있는 test 페이지 개발</li>
+                    </ul>
+                </li>
+                <li>
+                    사내 QA 시스템의 기획 및 개발 투입
+                    <ul>
+                        <li>RESTful API 규칙을 철저히 준수하여 데이터를 통신하고, 규칙에 대한 리뷰 및 리팩토링 진행</li>
+                        <li>React, TypeScript, Recoil, React-query 등을 활용하여 게시판 개발 및 일정관리를 위한 KanbanBoard 페이지 개발</li>
+                    </ul>
+                </li>
+                <li>
+                    GIS 해외 프로젝트 리팩토링 및 추가개발 투입
+                    <ul>
+                        <li>해외 프로젝트를 Solution으로 이용하기 위해 패키징 진행</li>
+                        <li>자사의 해외지사에서 수행한 프로젝트 내부의 오류 수정 및 리팩토링 진행</li>
+                        <li>필요한 추가 기능 개발 및 불필요 코드 제거</li>
+                    </ul>
+                </li>
+                <li>
+                    GIS 국내 프로젝트 개발 및 유지보수
+                    <ul>
+                        <li>엑셀 활용한 공원 대장관리 기능 개발</li>
+                        <li>200GB용량의 파일 관리 서버 관리용 유틸성 프로그램 개발</li>
+                        <li>자주 쓰이는 util성 클래스의 리팩토링 및 공통화</li>
+                        <li>자주 쓰이는 util성 클래스들을 모아 사내 maven repository 배포 및 프로젝트 활용</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <br>
+
+            <p>▎개발서버 Devops 환경 구축</p>
+            <ul>
+                <li>
+                    Docker
+                    <ul>
+                        <li>내부에 Jenkins 배포하여 개발서버 CI/CD 환경 구성</li>
+                        <li>SpringBoot, React, Tomcat 사내 개발 프로젝트 배포</li>
+                        <li>내부에 Nexus 배포하여 사내 라이브러리로써 활용</li>
+                    </ul>
+                </li>
+                <li>
+                    Jenkins
+                    <ul>
+                        <li>내부에 Docker 설치후, 마운트 기능을 활용하여 바깥의 Docker에게 배포명령 전달</li>
+                        <li>Ant, Maven 등의 빌드 스크립트 작성 및 CI / CD 환경 통일화</li>
+                        <li>Spring, SpringBoot, React 등 개발 프로젝트 배포</li>
+                    </ul>
+                </li>
+                <li>
+                    Nexus
+                    <ul>
+                        <li>사내 maven repository 배포</li>
+                        <li>Java SSL 인증서 등록하여 Https 프로토콜 활용</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+      <div id="footer"></div>
+
+
+        <!-- Footer -->
+<!--        <div id="footer-wrapper" class="cf">-->
+<!--            <h2> Footer Wrapper</h2>-->
+<!--            &lt;!&ndash;      <div class="boxi"></div>&ndash;&gt;-->
+<!--            &lt;!&ndash;      <div class="boxi"></div>&ndash;&gt;-->
+<!--            &lt;!&ndash;      <div class="boxi"></div>&ndash;&gt;-->
+<!--            &lt;!&ndash;      <div class="boxi"></div>&ndash;&gt;-->
+<!--            &lt;!&ndash;      <div class="boxi"></div>&ndash;&gt;-->
+<!--            &lt;!&ndash;      <div class="boxi"></div>&ndash;&gt;-->
+<!--        </div>-->
+
+<!--        &lt;!&ndash; 크레딧 카드 &ndash;&gt;-->
+<!--        <div id="credit"><span>Layout by. Arlina Design Powered by. Codepen</span></div>-->
+
     </div>
-
-    <!-- Footer -->
-    <div id="footer-wrapper" class="cf">
-      <h2> Footer Wrapper</h2>
-<!--      <div class="boxi"></div>-->
-<!--      <div class="boxi"></div>-->
-<!--      <div class="boxi"></div>-->
-<!--      <div class="boxi"></div>-->
-<!--      <div class="boxi"></div>-->
-<!--      <div class="boxi"></div>-->
-    </div>
-
-    <!-- 크레딧 카드 -->
-    <div id="credit"><span>Layout by. Arlina Design Powered by. Codepen</span></div>
-
-  </div>
 </div>
 </div>
 <div class='back-to-top' id='back-to-top' title='Back to top'><i class='fa fa-chevron-up'></i></div>
 <!-- partial -->
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script  src="./script.js"></script>
+<script src="./script.js"></script>
 <script src="../src/js/Scroll.js"></script>
-<script  src="../src/js/Graph/Graph-back.js"></script>
-<script  src="../src/js/Graph/Graph-devops.js"></script>
-<script  src="../src/js/Graph/Graph-front.js"></script>
-<script  src="../src/js/Slider.js"></script>
+<script src="../src/js/Graph/Graph-back.js"></script>
+<script src="../src/js/Graph/Graph-devops.js"></script>
+<script src="../src/js/Graph/Graph-front.js"></script>
+<script src="../src/js/Slider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/5.1.1/marked.min.js"></script>
+<script>
+    let markdown = `
+    ▎GIS 교육 및 실습 멘토링
+
+    - OpenLayers, Geotools, Geoserver의 구조와 사용법에 대한 사내 교육시스템 진행
+    - OpenLayers, Geotools, Geoserver를 활용하여 공간분석, 기능구현 등 과제를 수행하며 개인 프로젝트 수행
+    - PostGIS 공간 DB에 대한 교육과 실습 진행
+    - WMS, WFS, WCS, WPS 등 GIS 표준 통신방식 및 WKT 데이터 타입에 대한 실습 진행
+    - 공간분석 WebProject에 투입되어, PostGIS 공간분석 쿼리 작성
+
+
+    ▎개발업무 진행
+
+    - GIS 공간분석에 사용되는 OpenLayers, Geotools 기반의 SDK 서버의 관리 및 예제 / 테스트 페이지 개발
+        - SDK 서버의 코드 분석하여 Docs 페이지 작성
+        - parameter를 작성하고 요청을 보낸후 결과값을 확인할 수 있는 test 페이지 개발
+
+    - 사내 QA 시스템의 기획 및 개발 투입
+        - RESTful API 규칙을 철저히 준수하여 데이터를 통신하고, 규칙에 대한 리뷰 및 리팩토링 진행
+        - React, TypeScript, Recoil, React-query 등을 활용하여 게시판 개발 및 일정관리를 위한 KanbanBoard 시스템 개발
+
+    - GIS 해외 프로젝트 리팩토링 및 추가개발 투입
+        - 해외 프로젝트를 Solution으로 이용하기 위해 패키징 진행
+        - 자사의 해외지사에서 수행한 프로젝트 내부의 오류 수정 및 리팩토링 진행
+        - 필요한 추가 기능 개발 및 불필요 코드 제거
+
+    - GIS 국내 프로젝트 개발 및 유지보수
+        - 엑셀 활용한 공원 대장관리 기능 개발
+        - 200GB용량의 파일 관리 서버 관리용 유틸성 스크립트 개발
+
+
+    ▎ Devops 환경 구축
+
+    - 개발서버 Docker 활용
+        - 내부에 Jenkins 배포하여 개발서버 배포전략 구성
+        - SpringBoot, React, Tomcat 프로젝트 배포
+        - 내부에 Nexus 배포하여 사내 라이브러리로써 활용
+        - 프로젝트 진행시 빈번하게 사용되는 util성 클래스들 정리하여 utilkit nexus로 배포
+        - 배포과정중 발생한 SSL 인증문제 해결
+
+
+    ▎ 대규모 서버 정리 작업 리드
+
+    - Jenkins 활용하여 배포방식 통일화 예시
+    - 대규모 서버 정리 작업 총괄 및 코드 리뷰
+    - 데이터베이스 마이그레이션 파일 정리
+`;
+
+    // document.getElementById('worksMarkDown').innerHTML = marked.parse(markdown);
+</script>
 
 </body>
 </html>

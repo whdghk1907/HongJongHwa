@@ -66,3 +66,28 @@ $(function() {
     })
   })
 }).call(this);
+
+// JavaScript 코드
+document.addEventListener("DOMContentLoaded", function() {
+  var menuItems = document.querySelectorAll(".menu li");
+
+  menuItems.forEach(function(item) {
+    item.addEventListener("click", function() {
+      var className = item.textContent.toLowerCase().replace(/\s/g, "");
+      var targetElement = null;
+
+      if (className === "home") {
+        targetElement = document.body;
+      } else {
+        targetElement = document.querySelector("." + className);
+      }
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop + 10,
+          behavior: "smooth"
+        });
+      }
+    });
+  });
+});
