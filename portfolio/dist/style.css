@@ -127,7 +127,6 @@ a:visited:hover {
 #main {
     position: relative;
     float: left;
-    width: 66%;
     background: #fff;
 }
 
@@ -135,8 +134,8 @@ a:visited:hover {
 #box2,
 #box3 {
     position: relative;
-    height: 170px;
     display: block;
+    height: 730px;
     background: #ecf0f1;
     margin: 0 0 20px 0;
 }
@@ -155,8 +154,7 @@ a:visited:hover {
     top: 0;
     right: 0;
     bottom: 0;
-    height: 170px;
-    width: 250px;
+    width: 430px;
     margin: 0;
     background: #fff url('../image/O2QA.png') center;
     background-size: cover
@@ -184,7 +182,6 @@ a:visited:hover {
     top: 0;
     bottom: 0;
     text-align: center;
-    height: 170px;
     line-height: 170px;
     width: 250px;
     margin: 0;
